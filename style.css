@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 20%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Font-size: 15px;
+  --font-family: 'Overpass', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  font-family: var(--font-family);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  height: 400px;
+  width: 400px;
+  border-radius: 30px;
+  padding-top: 30px;
+  background-image: linear-gradient(#1e2834, #141921);
+}
+
+.image-container {
+  border-radius: 50%;
+  background-color: var(--Dark-Blue);
+  width: 50px;
+  height: 50px;
+}
+
+#star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+/* star idsinin altındaki img demek */
+#star>img {
+  height: 20px;
+}
+
+.heading {
+  color: var(--White);
+  font-weight: 700;
+  font-size: 24px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.sub-heading {
+  font-weight: 400;
+  font-size: var(--Font-size);
+  display: inline-block;
+  margin-left: 30px;
+  max-width: 350px;
+  line-height: 1.5;
+  color: var(--Medium-Grey);
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+}
+
+.number-submit {
+  margin-top: 25px;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.number-submit button {
+  border: none;
+  color: var(--Medium-Grey);
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--Dark-Blue);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.number-submit button:hover {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+
+}
+
+.number-submit button:focus {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 30px;
+  font-size: var(--Font-size);
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  width: 85%;
+  height: 45px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: var(--White);
+  color: hsl(25, 97%, 53%);
+}
+
+
+/* THANK YOU SECTİON */
+.ty-container {
+  height: 400px;
+  width: 400px;
+  border-radius: 30px;
+  background-image: linear-gradient(#1e2834, #141921);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-container {
+  height: 120px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.ty-second-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+}
+
+.ty-rating-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(25, 97%, 53%);
+  background-color: var(--Dark-Blue);
+  border-radius: 13px;
+  font-size: var(--Font-size);
+  word-spacing: 1.5;
+  /* arka plan için genişlik ve yükseklik */
+  width: 50%;
+  height: 30px;
+}
+
+.ty-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#ty-heading-first {
+  color: var(--White);
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#ty-subheading-second {
+  text-align: center;
+  color: var(--Medium-Grey);
+  font-size: var(--Font-size);
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 350px;
+    height: 380px;
+  }
+
+  .image-container {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  #star>img {
+    height: 18px;
+  }
+
+  .submit-button {
+    height: 50px;
+    font-weight: 400;
+  }
+
+  .sub-heading {
+    font-size: 15px;
+    letter-spacing: 0;
+    max-width: 300px;
+    padding-right: 10px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .ty-container {
+    width: 350px;
+    height: 380px;
+  }
+}

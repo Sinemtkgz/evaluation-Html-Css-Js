@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="degerlendirme.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="image-container" id="star">
+        <img src="/images/icon-star.svg" alt="star">
+      </div>
+
+      <h1 class="heading">How did we do?</h1>
+      <p class="sub-heading">Please let us know how we did with your support request. All feedback is appreciated to
+        help us improve our
+        offering!</p>
+
+      <div class="number">
+        <div class="number-submit">
+          <button id="rate_1" class="component__circle" onclick="setValue(1)">1</button>
+          <button id="rate_2" class="component__circle" onclick="setValue(2)">2</button>
+          <button id="rate_3" class="component__circle" onclick="setValue(3)">3</button>
+          <button id="rate_4" class="component__circle" onclick="setValue(4)">4</button>
+          <button id="rate_5" class="component__circle" onclick="setValue(5)">5</button>
+        </div>
+      </div>
+
+      <div class="button">
+        <button type="submit" class="submit-button" onclick="Submit()">SUBMIT</button>
+      </div>
+    </div>
+
+
+    <script src="degerlendirme.js"></script>
+  </body>
+
+</html>
